@@ -15,6 +15,6 @@ If you've ever ran into a case where you wanted to quickly change variable names
         public const string Language = "en-US";
         public const string Version = "1.5";
         public const string Author = "Mads Kristensen";
-        public const string Tags = "";
+        public const string Tags = "cursor, caret, typing";
     }
 }
