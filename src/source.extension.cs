@@ -14,7 +14,7 @@ namespace MultiEdit
 If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use this extension to set virtual carets that all behave the same.";
         public const string Language = "en-US";
         public const string Version = "1.8";
-        public const string Author = "Mads Kristensen";
+        public const string Author = "Ala Shiban";
         public const string Tags = "cursor, caret, typing";
     }
 }

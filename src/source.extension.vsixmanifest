@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="MultiEdit..c6fb8e57-fde0-4987-8e7a-5ca9b4beddcb" Version="1.8" Language="en-US" Publisher="Mads Kristensen" />
+        <Identity Id="MultiEdit..c6fb8e57-fde0-4987-8e7a-5ca9b4beddcb" Version="1.8" Language="en-US" Publisher="Ala Shiban" />
         <DisplayName>Multi Select Mode</DisplayName>
         <Description xml:space="preserve">Simultaneously edit in more than one location in the editor
 
