@@ -7,7 +7,7 @@
 
 If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use this extension to set virtual carets that all behave the same.</Description>
         <MoreInfo>https://github.com/madskristensen/MultiEdit</MoreInfo>
-        <License>Resources\LICENSES</License>
+        <License>Resources\LICENSE</License>
         <ReleaseNotes>https://github.com/madskristensen/MultiEdit/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Preview.png</PreviewImage>
