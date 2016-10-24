@@ -11,9 +11,9 @@ namespace MultiEdit
         public const string Name = "Multiple Cursors";
         public const string Description = @"Simultaneously edit in more than one location in the editor
 
-If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use Multi-Edit to set virtual carets that all behave the same.";
+If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use this extension to set virtual carets that all behave the same.";
         public const string Language = "en-US";
-        public const string Version = "1.4";
+        public const string Version = "1.5";
         public const string Author = "Mads Kristensen";
         public const string Tags = "";
     }
