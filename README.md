@@ -1,4 +1,4 @@
-# Multiple cursor support
+# Multi Select Mode
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3dpklojvnugt515v?svg=true)](https://ci.appveyor.com/project/madskristensen/multiedit)
 
@@ -9,9 +9,9 @@ or get the [CI build](http://vsixgallery.com/extension/MultiEdit..c6fb8e57-fde0-
 
 Simultaneously edit in more than one location in the editor
 
-If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use Multi-Edit to set virtual carets that all behave the same.
+If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use *Multi Select Mode* to set virtual carets that all behave the same.
 
-You can check an [installable extension on the gallery](http://visualstudiogallery.msdn.microsoft.com/2beb9705-b568-45d1-8550-751e181e3aef) for Visual Studio 2012/2013/2015.
+![Multi Edit Mode](art/screenshot.png)
 
 ## How to use
 

@@ -8,7 +8,7 @@ namespace MultiEdit
     static class Vsix
     {
         public const string Id = "MultiEdit..c6fb8e57-fde0-4987-8e7a-5ca9b4beddcb";
-        public const string Name = "Multiple Cursors";
+        public const string Name = "Multi Select Mode";
         public const string Description = @"Simultaneously edit in more than one location in the editor
 
 If you've ever ran into a case where you wanted to quickly change variable names or multiple loop conditions - you can use this extension to set virtual carets that all behave the same.";
