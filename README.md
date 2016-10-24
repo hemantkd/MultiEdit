@@ -1,4 +1,11 @@
-# Multiple cursor support for Visual Studio
+# Multiple cursor support
+
+[![Build status](https://ci.appveyor.com/api/projects/status/3dpklojvnugt515v?svg=true)](https://ci.appveyor.com/project/madskristensen/multiedit)
+
+Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/2beb9705-b568-45d1-8550-751e181e3aef)
+or get the [CI build](http://vsixgallery.com/extension/MultiEdit..c6fb8e57-fde0-4987-8e7a-5ca9b4beddcb/).
+
+---------------------------------------
 
 Simultaneously edit in more than one location in the editor
 
