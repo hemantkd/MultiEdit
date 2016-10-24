@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Composition;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel.Composition;
 using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.OLE.Interop;
-using Microsoft.VisualStudio.Utilities;
 using Microsoft.VisualStudio.Editor;
+using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.TextManager.Interop;
+using Microsoft.VisualStudio.Utilities;
 
 namespace MultiPointEdit
 {
@@ -25,14 +19,14 @@ namespace MultiPointEdit
         internal AdornmentLayerDefinition multiEditAdornmentLayer = null;
 
         [Import(typeof(IVsEditorAdaptersFactoryService))]
-        internal IVsEditorAdaptersFactoryService editorFactory = null; 
+        internal IVsEditorAdaptersFactoryService editorFactory = null;
 
         public void VsTextViewCreated(IVsTextView textViewAdapter)
         {
             IWpfTextView textView = editorFactory.GetWpfTextView(textViewAdapter);
 
             if (textView != null)
-                AddCommandFilter(textViewAdapter, textView, new MultiPointEditCommandFilter(textView)); 
+                AddCommandFilter(textViewAdapter, textView, new MultiPointEditCommandFilter(textView));
         }
 
         private void AddCommandFilter(IVsTextView viewAdapter, IWpfTextView textView, MultiPointEditCommandFilter commandFilter)

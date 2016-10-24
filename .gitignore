@@ -1,6 +1,7 @@
 # Build products
 [Bb]in
 [Oo]bj
+.vs
 
 # User preferences
 *.user

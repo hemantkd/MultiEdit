@@ -1,18 +1,17 @@
-﻿using EnvDTE;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Shapes;
+using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Shapes;
 
 namespace MultiPointEdit
 {
@@ -64,8 +63,8 @@ namespace MultiPointEdit
                     case ((uint)VSConstants.VSStd2KCmdID.PASTEASHTML):
                     case ((uint)VSConstants.VSStd2KCmdID.BOL):
                     case ((uint)VSConstants.VSStd2KCmdID.EOL):
-                    case ((uint)VSConstants.VSStd2KCmdID.RETURN):  
-                    case ((uint)VSConstants.VSStd2KCmdID.BACKTAB):  
+                    case ((uint)VSConstants.VSStd2KCmdID.RETURN):
+                    case ((uint)VSConstants.VSStd2KCmdID.BACKTAB):
                     case ((uint)VSConstants.VSStd2KCmdID.WORDPREV):
                     case ((uint)VSConstants.VSStd2KCmdID.WORDNEXT):
 
@@ -83,7 +82,7 @@ namespace MultiPointEdit
                 {
 
                     case ((uint)VSConstants.VSStd97CmdID.Delete):
-                    case ((uint)VSConstants.VSStd97CmdID.Paste):                    
+                    case ((uint)VSConstants.VSStd97CmdID.Paste):
                         if (m_trackList.Count > 0)
                             return SyncedOperation(ref pguidCmdGroup, nCmdID, nCmdexecopt, pvaIn, pvaOut);
                         break;
@@ -92,10 +91,10 @@ namespace MultiPointEdit
                 }
             }
 
-            
+
             switch (nCmdID)
             {
-                
+
                 // When ESC is used, cancel the Multi Edit mode
                 case ((uint)VSConstants.VSStd2KCmdID.CANCEL):
                     ClearSyncPoints();
@@ -109,7 +108,7 @@ namespace MultiPointEdit
         }
 
         private int SyncedOperation(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
-        {   
+        {
 
             ITextCaret caret = m_textView.Caret;
             var tempTrackList = m_trackList;
@@ -151,13 +150,13 @@ namespace MultiPointEdit
                 var curPosition = trackPoint.GetPosition(m_textView.TextSnapshot);
                 IncrementCount(positionHash, curPosition.ToString());
                 if (positionHash[curPosition.ToString()] > 1)
-                    continue;                
+                    continue;
                 DrawSingleSyncPoint(trackPoint);
                 newTrackList.Add(trackPoint);
             }
 
             m_trackList = newTrackList;
-            
+
         }
 
         private void IncrementCount(Dictionary<string, int> someDictionary, string id)
@@ -222,7 +221,7 @@ namespace MultiPointEdit
                 m_textView.Caret.MoveTo(curTrackPoint.GetPoint(m_textView.TextSnapshot));
             }
         }
-            
+
 
         private void AddSyncPoint(int position)
         {
@@ -253,7 +252,7 @@ namespace MultiPointEdit
                         case ((uint)VSConstants.VSStd2KCmdID.BOL):
                         case ((uint)VSConstants.VSStd2KCmdID.EOL):
                         case ((uint)VSConstants.VSStd2KCmdID.RETURN):
-                        case ((uint)VSConstants.VSStd2KCmdID.BACKTAB): 
+                        case ((uint)VSConstants.VSStd2KCmdID.BACKTAB):
                             prgCmds[i].cmdf = (uint)(OLECMDF.OLECMDF_ENABLED | OLECMDF.OLECMDF_SUPPORTED);
                             return VSConstants.S_OK;
                     }
