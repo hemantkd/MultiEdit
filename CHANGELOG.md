@@ -16,3 +16,4 @@ on the official Visual Studio extension gallery.
 - [x] Renamed extension to be more descriptive
 - [x] Taken ownership of the extension
 - [x] Cleaned up folder structure
+- [x] New logo
