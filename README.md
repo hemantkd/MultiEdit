@@ -1,4 +1,4 @@
-# Multi Select Mode
+# Multi Edit Mode
 
 [![Build status](https://ci.appveyor.com/api/projects/status/3dpklojvnugt515v?svg=true)](https://ci.appveyor.com/project/madskristensen/multiedit)
 
