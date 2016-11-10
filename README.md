@@ -35,11 +35,9 @@ If you've ever ran into a case where you wanted to quickly change variable names
 * Virtual Spaces
 
 ## Contribute
-Feel free to suggest new languages not currently supported by this
-extension on the
-[issue tracker](https://github.com/madskristensen/TextmateBundleInstaller/issues).
-If you know a TextMate bundle that would work, then remember to add a
-link to that as well.
+
+Feel free to suggest new features on the
+[issue tracker](https://github.com/madskristensen/MultiEdit/issues).
 
 Check out the [contribution guidelines](.github/CONTRIBUTING.md)
 if you want to contribute to this project.
